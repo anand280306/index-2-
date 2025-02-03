@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>LOGIN PAGE</title>
+</head>
+<body style="background-color:powderblue">
+<script>
+function check()
+{
+alert(localStorage.getItem("username"));
+alert(localStorage.getItem("password"));
+
+
+let username= document.getElementId("username").value;
+let password= document.getElementId("password").value;
+let uname= localStorage.getItem("username");
+let pass= localStorage.getItem("password");
+if(username== uname && password==pass)
+{alert("you are valid");
+window.location.href="homepage.html";
+}
+else{ alert("intruder");}
+}
+</script>
+
+
+<style>
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color:#008CBA}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+<style>
+body {
+background-image: url('img_anime.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+
+</head>
+<body>
+<center>
+
+<img src="programming.gif" alt="Computer man" style="width:500px;height:300px;">
+
+<i><b><font color="violet"><h1>LOGIN</h1></i></b></font>
+	 	 		 	
+<b><font color="red"><h2>USERNAME</h2></b></font>
+<input type="text">
+<b><font color="red"><h3>PASSWORD</h3></b></font>	
+<input type="text"><br><br>
+<button class="button">Lets get started</button><br>
+<input type="submit"button onClick="check()">
+
+
+<marquee><p><b>For more details visit:</p></b></marquee>
+<div class="main">
+<marquee class="marq"
+bgcolor="green"
+direction="left"
+loop="">
+
+
+<marquee class="marq"
+bgcolor="green"
+direction="right"
+</marquee>
+
+<p><b><font color:"blue">FILL REGISTERATION FORM FOR MORE DETAILS</p></b></font>
+<a href="file:///C:/Users/bsw2408/Downloads/registeration.html">REGISTERATION FORM</a>
+</center>
+</body>
+</html>
